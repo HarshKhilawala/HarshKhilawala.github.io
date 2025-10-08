@@ -21,6 +21,8 @@ Research Projects: [PyNN](https://neuralensemble.org/PyNN/) <img width="15" heig
 
 ### “Continuous effort– not strength or intelligence – is the key to unlocking our potential. " - Winston Churchill
 
+----------------------------------------------------------------------------------------------------------------------
+
 This website is a forked repository of [CMU CI Lab's Github Repo](https://github.com/cmu-ci-lab/website_templates) made by [Prof. Ioannis Gkioulekas](https://www.cs.cmu.edu/~igkioule/) - ***Associate Professor @ Robotics Institute at Carnegie Mellon University***
 
 <!--
