@@ -1,4 +1,4 @@
-# Personal Academic Website - [harshkhilawala.me](harshkhilawala.me) - Harsh Khilawala - [LinkedIn](https://www.linkedin.com/in/harshkhilawala/)
+# Personal Academic Website - [harshkhilawala.me](http://harshkhilawala.me/) - Harsh Khilawala - [LinkedIn](https://www.linkedin.com/in/harshkhilawala/)
 
 
 This website is a forked repository of [CMU CI Lab's Github Repo](https://github.com/cmu-ci-lab/website_templates) made by [Prof. Ioannis Gkioulekas](https://www.cs.cmu.edu/~igkioule/) - ***Associate Professor @ Robotics Institute at Carnegie Mellon University***
