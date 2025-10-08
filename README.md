@@ -1,6 +1,6 @@
 # Harsh Khilawala - Problem Solver | Open Source 💙
  
- <img width="15" height="30" alt="image" src="./index_files/about.avif" />
+ <img alt="STANFORD" src="./index_files/about.avif" />
  
  **Ex-SWE Intern @SalesUp**  
  **Google Summer of Code 2021 ☀️ - INCF**  
