@@ -8,8 +8,8 @@
  **MS - Computer Science - Pace University - Class of 2025**  
  **B.Tech - Computer Science & Engineering - CHARUSAT University - Class of 2023**
 
-Research Interests: Computational Neuroscience, Neuroinformatics, Neuroimaging, Bio-informatics, Simulation Technologies, Computer Vision, Artificial Intelligence, Machine Learning, Medical Imaging  
-Research Projects: [PyNN](https://neuralensemble.org/PyNN/) <img width="15" height="30" alt="image" src="https://github.com/user-attachments/assets/e797292d-d137-422b-9cf4-1cee2496fb8c" />
+**Research Interests:** Computational Neuroscience, Neuroinformatics, Neuroimaging, Bio-informatics, Simulation Technologies, Computer Vision, Artificial Intelligence, Machine Learning, Medical Imaging  
+**Research Projects:** [PyNN](https://neuralensemble.org/PyNN/) <img width="15" height="30" alt="image" src="https://github.com/user-attachments/assets/e797292d-d137-422b-9cf4-1cee2496fb8c" />
 
 - Website: [harshkhilawala.me](http://harshkhilawala.me/) 
 - LinkedIn: [/harshkhilawala](https://www.linkedin.com/in/harshkhilawala/)
