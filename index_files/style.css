@@ -27,8 +27,14 @@
 	src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/HkF_qI1x_noxlxhrhMQYED8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
-/* General declarations */
-body {
+.set-max-width {
+	border: 0;
+	width: 100%;
+	margin: auto;
+	padding: auto;
+}
+
+.set-limit-width {
 	border: 0; 
 	max-width: 60em;
 	margin: auto;
@@ -37,6 +43,21 @@ body {
 	font-size: 1em;
 	color: #000;
 }
+
+body {
+	margin: 0;
+}
+
+/* General declarations */
+/* body {
+	border: 0; 
+	max-width: 60em;
+	margin: auto;
+	padding: 1em;
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #000;
+} */
 
 h1 {
 	/* text-align: center; */
