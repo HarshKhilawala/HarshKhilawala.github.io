@@ -28,17 +28,20 @@
 }
 
 .set-max-width {
-	border: 0;
-	width: 100%;
+	border: 0; 
+	max-width: 60em;
 	margin: auto;
 	padding: auto;
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #000;
 }
 
 .set-limit-width {
 	border: 0; 
 	max-width: 60em;
 	margin: auto;
-	padding: 1em;
+	padding: auto;
 	font-family: 'Lato', Verdana, Helvetica, sans-serif;
 	font-size: 1em;
 	color: #000;
