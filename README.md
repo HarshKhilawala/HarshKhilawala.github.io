@@ -21,6 +21,8 @@
 
 ### “Continuous effort– not strength or intelligence – is the key to unlocking our potential. " - Winston Churchill
 
+<sup><sup><sup>Image © 2025 Stanford University. Stanford, California 94305.</sup></sup></sup>
+
 ## Disclaimer
 
 This website is a forked repository of [CMU CI Lab's Github Repo](https://github.com/cmu-ci-lab/website_templates) made by [Prof. Ioannis Gkioulekas](https://www.cs.cmu.edu/~igkioule/) - ***Associate Professor @ Robotics Institute at Carnegie Mellon University***
