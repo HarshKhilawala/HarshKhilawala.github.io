@@ -296,10 +296,10 @@ footer {
 	line-height: 1.2;
 } */
 
+
+
+
 /* smartphones, iPhone, portrait 480x320 phones */
-
-/*
-
 @media (min-width:320px) {
 	.bachelor-duration-inline {
 		align-content: center;
@@ -364,12 +364,13 @@ footer {
 	.bachelor-duration-inline {
 		align-content: center;
 		/* visibility: visible; */
-		/* display: none; */
+		display: unset;
 	}
 
 	.bachelor-location-inline {
 		align-content: center;
 		/* visibility: visible; */
+		display: unset;
 	}
 }
 
@@ -378,12 +379,13 @@ footer {
 	.bachelor-duration-inline {
 		align-content: center;
 		/* visibility: visible; */
+		display: unset;
 	}
 
 	.bachelor-location-inline {
 		align-content: center;
 		/* visibility: visible; */
+		display: unset;
 	}
 }
 
-*/
