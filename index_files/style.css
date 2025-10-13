@@ -76,7 +76,7 @@ h3 {
 	padding: 0;
 }
 
-p,
+/* p,
 ul,
 ol,
 iframe,
@@ -88,7 +88,7 @@ code {
 	margin: 0 0 1em 1em;
 	padding: 0;
 	width: calc(100% - 1em);
-}
+} */
 
 pre,
 code {
@@ -299,93 +299,198 @@ footer {
 
 
 
+
+/* MEDIA QUERIES BELOW ARE FOR TOGGLING RIGHT ELEMENTS OF EACH EDUCATION */
+
 /* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:320px) {
+@media screen and (min-width:320px) {
 	.bachelor-duration-inline {
 		align-content: center;
-		/* visibility: hidden; */
 		display: none;
 	}
 
 	.bachelor-location-inline {
 		align-content: center;
-		/* visibility: hidden; */
 		display: none;
 	}
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media (min-width:481px) {
+@media screen and (min-width:481px) {
 	.bachelor-duration-inline {
 		align-content: center;
-		/* visibility: hidden; */
 		display: none;
 	}
 
 	.bachelor-location-inline {
 		align-content: center;
-		/* visibility: hidden; */
 		display: none;
 	}
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:641px) {
+@media screen and (min-width:641px) {
 	.bachelor-duration-inline {
 		align-content: center;
-		/* visibility: hidden; */
 		display: none;
 	}
 
 	.bachelor-location-inline {
 		align-content: center;
-		/* visibility: hidden; */
 		display: none;
 	}
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:961px) {
+@media screen and (min-width:961px) {
 	.bachelor-duration-inline {
 		align-content: center;
-		/* visibility: hidden; */
 		display: none;
 	}
 
 	.bachelor-location-inline {
 		align-content: center;
-		/* visibility: hidden; */
 		display: none;
 	}
 }
 
 /* big landscape tablets, laptops, and desktops */
-@media (min-width:1025px) {
+@media screen and (min-width:1025px) {
 	.bachelor-duration-inline {
 		align-content: center;
-		/* visibility: visible; */
 		display: unset;
 	}
 
 	.bachelor-location-inline {
 		align-content: center;
-		/* visibility: visible; */
 		display: unset;
 	}
 }
 
 /* hi-res laptops and desktops */
-@media (min-width:1281px) {
+@media screen and (min-width:1281px) {
 	.bachelor-duration-inline {
 		align-content: center;
-		/* visibility: visible; */
 		display: unset;
 	}
 
 	.bachelor-location-inline {
 		align-content: center;
-		/* visibility: visible; */
 		display: unset;
 	}
 }
 
+
+
+
+
+/* MEDIA QUERIES BELOW ARE FOR TOGGLING text-align: justify from mobile screens */
+
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (min-width:320px) {
+
+	p,
+	ul,
+	ol,
+	iframe,
+	table,
+	figure,
+	pre,
+	code {
+		text-align: unset;
+		margin: 0 0 1em 1em;
+		padding: 0;
+		width: calc(100% - 1em);
+	}
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media screen and (min-width:481px) {
+
+	p,
+	ul,
+	ol,
+	iframe,
+	table,
+	figure,
+	pre,
+	code {
+		text-align: unset;
+		margin: 0 0 1em 1em;
+		padding: 0;
+		width: calc(100% - 1em);
+	}
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (min-width:641px) {
+
+	p,
+	ul,
+	ol,
+	iframe,
+	table,
+	figure,
+	pre,
+	code {
+		text-align: unset;
+		margin: 0 0 1em 1em;
+		padding: 0;
+		width: calc(100% - 1em);
+	}
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (min-width:961px) {
+
+	p,
+	ul,
+	ol,
+	iframe,
+	table,
+	figure,
+	pre,
+	code {
+		text-align: unset;
+		margin: 0 0 1em 1em;
+		padding: 0;
+		width: calc(100% - 1em);
+	}
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media screen and (min-width:1025px) {
+
+	p,
+	ul,
+	ol,
+	iframe,
+	table,
+	figure,
+	pre,
+	code {
+		text-align: justify;
+		margin: 0 0 1em 1em;
+		padding: 0;
+		width: calc(100% - 1em);
+	}
+}
+
+/* hi-res laptops and desktops */
+@media screen and (min-width:1281px) {
+
+	p,
+	ul,
+	ol,
+	iframe,
+	table,
+	figure,
+	pre,
+	code {
+		text-align: justify;
+		margin: 0 0 1em 1em;
+		padding: 0;
+		width: calc(100% - 1em);
+	}
+}
