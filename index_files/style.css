@@ -272,6 +272,10 @@ footer {
 	font-style: italic;
 }
 
+
+
+
+/* Custom CSS Starts here */
 .bachelor-degree {
 	display: flex;
 	justify-content: space-between;
@@ -281,6 +285,17 @@ footer {
 	display: flex;
 	justify-content: space-between;
 }
+
+#personal {
+	list-style-type: lower-greek;
+	font-weight: normal;
+}
+
+#ultimate-research-goal {
+	text-align: unset;
+	margin: 0;
+}
+
 
 /* .bachelor-duration-inline {
 	align-content: center;
@@ -295,9 +310,6 @@ footer {
 /* .bachelor-credentials {
 	line-height: 1.2;
 } */
-
-
-
 
 
 /* MEDIA QUERIES BELOW ARE FOR TOGGLING RIGHT ELEMENTS OF EACH EDUCATION */
