@@ -292,11 +292,14 @@ footer {
 	visibility: visible;
 } */
 
-.bachelor-credentials {
+/* .bachelor-credentials {
 	line-height: 1.2;
-}
+} */
 
 /* smartphones, iPhone, portrait 480x320 phones */
+
+/*
+
 @media (min-width:320px) {
 	.bachelor-duration-inline {
 		align-content: center;
@@ -382,3 +385,5 @@ footer {
 		/* visibility: visible; */
 	}
 }
+
+*/
