@@ -28,7 +28,7 @@
 }
 
 .set-max-width {
-	border: 0; 
+	border: 0;
 	max-width: 60em;
 	margin: auto;
 	font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -37,7 +37,7 @@
 }
 
 .set-limit-width {
-	border: 0; 
+	border: 0;
 	max-width: 60em;
 	margin: auto;
 	padding: 1em;
@@ -76,14 +76,22 @@ h3 {
 	padding: 0;
 }
 
-p, ul, ol, iframe, table, figure, pre, code {
+p,
+ul,
+ol,
+iframe,
+table,
+figure,
+pre,
+code {
 	text-align: justify;
 	margin: 0 0 1em 1em;
 	padding: 0;
 	width: calc(100% - 1em);
 }
 
-pre, code {
+pre,
+code {
 	background-color: #f0f0f0;
 	padding: 1em;
 	border: 1px solid #ddd;
@@ -92,7 +100,8 @@ pre, code {
 	width: calc(100% - 3em);
 }
 
-img, iframe {
+img,
+iframe {
 	border: none;
 }
 
@@ -100,7 +109,8 @@ table {
 	border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
 	padding: 0.25em;
 	border: 1px solid #c0c0c0;
 }
@@ -116,42 +126,45 @@ li {
 
 a {
 	color: #1772d0;
-	text-decoration:none;
+	text-decoration: none;
 }
 
-a:focus, a:hover, a:active {
+a:focus,
+a:hover,
+a:active {
 	color: #f09228;
-	text-decoration:none;
+	text-decoration: none;
 }
 
 /* Header material */
 /* Lab logo and personal photo */
-#logo, #photo {
+#logo,
+#photo {
 	float: right;
 	margin-left: 2em;
 }
 
 /* Navigation lists */
-nav > ul {
+nav>ul {
 	margin-left: 0;
 	list-style-type: none;
 	font-weight: bold;
 	font-size: 110%;
 }
 
-nav > ul > li {
+nav>ul>li {
 	/* display: inline-block; */
 	margin-right: 1em;
 	margin-left: 0;
 }
 
 /* Teaser figure in header */
-#teaser > img {
+#teaser>img {
 	width: 100%;
 	margin: 0 0 0.5em 0;
 }
 
-#teaser > figcaption {
+#teaser>figcaption {
 	font-style: italic;
 	font-size: 90%;
 }
@@ -164,13 +177,13 @@ nav > ul > li {
 	font-size: 110%;
 }
 
-#personal > li {
+#personal>li {
 	display: inline-block;
 	margin-right: 1em;
 	margin-left: 0;
 }
 
-#personal > li.group {
+#personal>li.group {
 	display: list-item;
 }
 
@@ -195,7 +208,9 @@ figure.entry figcaption p {
 }
 
 /* Different galleries: competitions, authors */
-figure.gallery, iframe.gallery, figure.person {
+figure.gallery,
+iframe.gallery,
+figure.person {
 	display: inline-block;
 	text-align: center;
 	margin: 0 1em 1em 1em;
@@ -215,7 +230,8 @@ figure.person img {
 	height: 10em;
 }
 
-figure.gallery figcaption, figure.person figcaption {
+figure.gallery figcaption,
+figure.person figcaption {
 	margin-top: 0.25em;
 	text-align: center;
 }
@@ -244,7 +260,9 @@ figure.gallery figcaption, figure.person figcaption {
 	padding: 0.25em;
 }
 
-.copy:focus, .copy:hover, .copy:active {
+.copy:focus,
+.copy:hover,
+.copy:active {
 	background-color: #d0d0d0;
 	cursor: pointer;
 }
@@ -252,4 +270,108 @@ figure.gallery figcaption, figure.person figcaption {
 /* Footer material */
 footer {
 	font-style: italic;
+}
+
+.bachelor-degree {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bachelor-university {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* .bachelor-duration-inline {
+	align-content: center;
+	visibility: visible;
+}
+
+.bachelor-location-inline {
+	align-content: center;
+	visibility: visible;
+} */
+
+.bachelor-credentials {
+	line-height: 1.2;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) {
+	.bachelor-duration-inline {
+		align-content: center;
+		/* visibility: hidden; */
+		display: none;
+	}
+
+	.bachelor-location-inline {
+		align-content: center;
+		/* visibility: hidden; */
+		display: none;
+	}
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) {
+	.bachelor-duration-inline {
+		align-content: center;
+		visibility: hidden;
+	}
+
+	.bachelor-location-inline {
+		align-content: center;
+		visibility: hidden;
+	}
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) {
+	.bachelor-duration-inline {
+		align-content: center;
+		visibility: hidden;
+	}
+
+	.bachelor-location-inline {
+		align-content: center;
+		visibility: hidden;
+	}
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) {
+	.bachelor-duration-inline {
+		align-content: center;
+		visibility: hidden;
+	}
+
+	.bachelor-location-inline {
+		align-content: center;
+		visibility: hidden;
+	}
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+	.bachelor-duration-inline {
+		align-content: center;
+		visibility: visible;
+	}
+
+	.bachelor-location-inline {
+		align-content: center;
+		visibility: visible;
+	}
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+	.bachelor-duration-inline {
+		align-content: center;
+		visibility: visible;
+	}
+
+	.bachelor-location-inline {
+		align-content: center;
+		visibility: visible;
+	}
 }
