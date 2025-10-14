@@ -40,7 +40,8 @@
 	border: 0;
 	max-width: 60em;
 	margin: auto;
-	padding: 1em;
+	padding-top: 0;
+	padding-bottom: 0;
 	font-family: 'Lato', Verdana, Helvetica, sans-serif;
 	font-size: 1em;
 	color: #000;
@@ -48,18 +49,6 @@
 
 body {
 	margin: 0;
-}
-
-body.set-max-width {
-	
-	margin: 0;
-	
-	/* border: 0;
-	max-width: 60em;
-	margin: auto;
-	font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	font-size: 1em;
-	color: #000; */
 }
 
 /* General declarations */
@@ -289,6 +278,12 @@ footer {
 
 /* Custom CSS Starts here */
 
+#top-main-container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
 /* Bachelor */
 .bachelor-degree {
 	display: flex;
@@ -298,6 +293,10 @@ footer {
 .bachelor-university {
 	display: flex;
 	justify-content: space-between;
+}
+
+#bachelor-limit-container {
+	padding-top: 0;
 }
 
 /* Masters */
@@ -311,6 +310,11 @@ footer {
 	justify-content: space-between;
 }
 
+#masters-limit-container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
 #personal {
 	list-style-type: lower-greek;
 	font-weight: normal;
@@ -321,9 +325,38 @@ footer {
 	margin: 0;
 }
 
-#ultimate-research-goal h3{
+#ultimate-research-goal h3 {
 	margin: 0 0 0.5em 0.4em;
 	padding: 0;
+}
+
+
+table {
+	border-collapse: collapse;
+	border: 2px solid rgb(140 140 140);
+	font-family: sans-serif;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	width: calc(100% - 1em);
+}
+
+/* Below CSS Selector means - all td tags except (with id term-credits and id term-gpa) */
+td:not(#term-credits, #term-gpa) {
+	text-align: center;
+}
+
+thead,
+tfoot {
+	background-color: rgb(228 240 245);
+}
+
+#term-credits,
+#term-gpa {
+	text-align: right;
+}
+
+tfoot td {
+	font-weight: bold;
 }
 
 
@@ -346,7 +379,7 @@ footer {
 
 /* smartphones, iPhone, portrait 480x320 phones */
 @media screen and (min-width:320px) {
-	
+
 	/* Bachelors */
 	.bachelor-duration-inline {
 		align-content: center;
@@ -495,113 +528,185 @@ footer {
 
 
 
-/* MEDIA QUERIES BELOW ARE FOR TOGGLING text-align: justify from mobile screens */
+/* MEDIA QUERIES BELOW ARE FOR TOGGLING text-align: unset from mobile screens */
 
 
 /* smartphones, iPhone, portrait 480x320 phones */
 @media screen and (min-width:320px) {
 
-	p,
-	ul,
-	ol,
-	iframe,
-	table,
-	figure,
-	pre,
-	code {
+	p {
 		text-align: unset;
 		margin: 0 0 1em 1em;
 		padding: 0;
 		width: calc(100% - 1em);
+	}
+
+	.set-max-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
+	}
+
+	.set-limit-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		padding: 1em;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
 	}
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media screen and (min-width:481px) {
 
-	p,
-	ul,
-	ol,
-	iframe,
-	table,
-	figure,
-	pre,
-	code {
+	p {
 		text-align: unset;
 		margin: 0 0 1em 1em;
 		padding: 0;
 		width: calc(100% - 1em);
+	}
+
+	.set-max-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
+	}
+
+	.set-limit-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		padding: 1em;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
 	}
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media screen and (min-width:641px) {
 
-	p,
-	ul,
-	ol,
-	iframe,
-	table,
-	figure,
-	pre,
-	code {
+	p {
 		text-align: unset;
 		margin: 0 0 1em 1em;
 		padding: 0;
 		width: calc(100% - 1em);
+	}
+
+	.set-max-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
+	}
+
+	.set-limit-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		padding: 1em;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
 	}
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media screen and (min-width:961px) {
 
-	p,
-	ul,
-	ol,
-	iframe,
-	table,
-	figure,
-	pre,
-	code {
+	p {
 		text-align: unset;
 		margin: 0 0 1em 1em;
 		padding: 0;
 		width: calc(100% - 1em);
 	}
+
+	.set-max-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
+	}
+
+	.set-limit-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		padding: 1em;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
+	}
+
 }
 
 /* big landscape tablets, laptops, and desktops */
 @media screen and (min-width:1025px) {
 
-	p,
-	ul,
-	ol,
-	iframe,
-	table,
-	figure,
-	pre,
-	code {
+	p {
 		text-align: justify;
 		margin: 0 0 1em 1em;
 		padding: 0;
 		width: calc(100% - 1em);
+	}
+
+	.set-max-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
+	}
+
+	.set-limit-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
 	}
 }
 
 /* hi-res laptops and desktops */
 @media screen and (min-width:1281px) {
 
-	p,
-	ul,
-	ol,
-	iframe,
-	table,
-	figure,
-	pre,
-	code {
+	p {
 		text-align: justify;
 		margin: 0 0 1em 1em;
 		padding: 0;
 		width: calc(100% - 1em);
+	}
+
+	.set-max-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
+	}
+
+	.set-limit-width {
+		border: 0;
+		max-width: 60em;
+		margin: auto;
+		
+		font-family: 'Lato', Verdana, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000;
 	}
 }
