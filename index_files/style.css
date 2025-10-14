@@ -36,6 +36,24 @@
 	color: #000;
 }
 
+#charusat-banner {
+	border: 0;
+	max-width: 60em;
+	margin: auto;
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+
+#pace-banner {
+	border: 0;
+	max-width: 60em;
+	margin: auto;
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+
 .set-limit-width {
 	border: 0;
 	max-width: 60em;
@@ -276,12 +294,25 @@ footer {
 
 
 /* Custom CSS Starts here */
+
+/* Bachelor */
 .bachelor-degree {
 	display: flex;
 	justify-content: space-between;
 }
 
 .bachelor-university {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Masters */
+.masters-degree {
+	display: flex;
+	justify-content: space-between;
+}
+
+.masters-university {
 	display: flex;
 	justify-content: space-between;
 }
@@ -321,12 +352,26 @@ footer {
 
 /* smartphones, iPhone, portrait 480x320 phones */
 @media screen and (min-width:320px) {
+	
+	/* Bachelors */
 	.bachelor-duration-inline {
 		align-content: center;
 		display: none;
 	}
 
 	.bachelor-location-inline {
+		align-content: center;
+		display: none;
+	}
+
+
+	/* Masters */
+	.masters-duration-inline {
+		align-items: center;
+		display: none;
+	}
+
+	.masters-location-inline {
 		align-content: center;
 		display: none;
 	}
@@ -343,6 +388,17 @@ footer {
 		align-content: center;
 		display: none;
 	}
+
+	/* Masters */
+	.masters-duration-inline {
+		align-items: center;
+		display: none;
+	}
+
+	.masters-location-inline {
+		align-content: center;
+		display: none;
+	}
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -353,6 +409,17 @@ footer {
 	}
 
 	.bachelor-location-inline {
+		align-content: center;
+		display: none;
+	}
+
+	/* Masters */
+	.masters-duration-inline {
+		align-items: center;
+		display: none;
+	}
+
+	.masters-location-inline {
 		align-content: center;
 		display: none;
 	}
@@ -369,6 +436,17 @@ footer {
 		align-content: center;
 		display: none;
 	}
+
+	/* Masters */
+	.masters-duration-inline {
+		align-items: center;
+		display: none;
+	}
+
+	.masters-location-inline {
+		align-content: center;
+		display: none;
+	}
 }
 
 /* big landscape tablets, laptops, and desktops */
@@ -382,6 +460,17 @@ footer {
 		align-content: center;
 		display: unset;
 	}
+
+	/* Masters */
+	.masters-duration-inline {
+		align-items: center;
+		display: unset;
+	}
+
+	.masters-location-inline {
+		align-content: center;
+		display: unset;
+	}
 }
 
 /* hi-res laptops and desktops */
@@ -392,6 +481,17 @@ footer {
 	}
 
 	.bachelor-location-inline {
+		align-content: center;
+		display: unset;
+	}
+
+	/* Masters */
+	.masters-duration-inline {
+		align-items: center;
+		display: unset;
+	}
+
+	.masters-location-inline {
 		align-content: center;
 		display: unset;
 	}
