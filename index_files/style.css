@@ -36,24 +36,6 @@
 	color: #000;
 }
 
-#charusat-banner {
-	border: 0;
-	max-width: 60em;
-	margin: auto;
-	font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	font-size: 1em;
-	color: #000;
-}
-
-#pace-banner {
-	border: 0;
-	max-width: 60em;
-	margin: auto;
-	font-family: 'Lato', Verdana, Helvetica, sans-serif;
-	font-size: 1em;
-	color: #000;
-}
-
 .set-limit-width {
 	border: 0;
 	max-width: 60em;
@@ -66,6 +48,18 @@
 
 body {
 	margin: 0;
+}
+
+body.set-max-width {
+	
+	margin: 0;
+	
+	/* border: 0;
+	max-width: 60em;
+	margin: auto;
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #000; */
 }
 
 /* General declarations */
