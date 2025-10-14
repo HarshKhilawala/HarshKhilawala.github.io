@@ -360,6 +360,12 @@ tfoot td {
 }
 
 
+.education-horizontal-rule {
+	padding: 0;
+	margin: 0;
+}
+
+
 /* .bachelor-duration-inline {
 	align-content: center;
 	visibility: visible;
