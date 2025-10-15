@@ -118,11 +118,19 @@ th {
 
 th {
 	font-weight: bold;
-	background: #f0f0f0;
+	background-color: rgb(228 240 245);
 }
 
 li {
 	margin: 0 0 0.5em 1em;
+}
+
+li.contact-detail {
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	margin-right: 1em;
+	margin-left: 0;
 }
 
 a {
@@ -341,7 +349,7 @@ table {
 }
 
 /* Below CSS Selector means - all td tags except (with id term-credits and id term-gpa) */
-td:not(#term-credits, #term-gpa) {
+td:not(#term-credits, #term-gpa, #term-cgpa) {
 	text-align: center;
 }
 
@@ -350,8 +358,24 @@ tfoot {
 	background-color: rgb(228 240 245);
 }
 
+/* BLOCKED style on bachelor table 
+	remove class name from the begining to apply to both tables
+	or create separate one for bachelor-terms-list
+*/
+.masters-terms-list tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+/* .bachelor-terms-list tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+} */
+
+/* Use below source to adjust undergraduate table design */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+
 #term-credits,
-#term-gpa {
+#term-gpa,
+#term-cgpa {
 	text-align: right;
 }
 
@@ -364,6 +388,22 @@ tfoot td {
 	padding: 0;
 	margin: 0;
 }
+
+/* 
+ul.semester-terms-list {
+	padding: 0;
+} */
+
+li.term {
+	font-weight: bold;
+	margin: 0 0 1em 0;
+}
+
+ul.totals {
+	padding: 0;
+	font-weight: normal;
+}
+
 
 
 /* .bachelor-duration-inline {
@@ -565,6 +605,30 @@ tfoot td {
 		font-size: 1em;
 		color: #000;
 	}
+
+	.alzheimer-stats-container {
+		border-color: blue;
+		border-style: solid;
+		border-width: 5px;
+		font-size: 16px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.alzheimer-stats-list {
+		padding: 0;
+	}
+
+	ul.semester-terms-list {
+		padding: 0;
+		list-style-type: none;
+	}
+
+	li.term {
+		font-weight: bold;
+		margin: 0 0 1em 0;
+	}
+
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -595,6 +659,28 @@ tfoot td {
 		font-size: 1em;
 		color: #000;
 	}
+
+	.alzheimer-stats-container {
+		border-color: blue;
+		border-style: solid;
+		border-width: 5px;
+		font-size: 16px;
+		padding-right: 5px;
+	}
+
+	.alzheimer-stats-list {
+		padding: 0;
+	}
+
+	ul.semester-terms-list {
+		padding: 0;
+		list-style-type: none;
+	}
+
+	li.term {
+		font-weight: bold;
+		margin: 0 0 1em 0;
+	}
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -624,6 +710,29 @@ tfoot td {
 		font-family: 'Lato', Verdana, Helvetica, sans-serif;
 		font-size: 1em;
 		color: #000;
+	}
+
+	.alzheimer-stats-container {
+		border-color: blue;
+		border-style: solid;
+		border-width: 5px;
+		font-size: 16px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.alzheimer-stats-list {
+		padding: 0;
+	}
+
+	ul.semester-terms-list {
+		padding: 0;
+		list-style-type: none;
+	}
+
+	li.term {
+		font-weight: bold;
+		margin: 0 0 1em 0;
 	}
 }
 
@@ -656,6 +765,29 @@ tfoot td {
 		color: #000;
 	}
 
+	.alzheimer-stats-container {
+		border-color: blue;
+		border-style: solid;
+		border-width: 5px;
+		font-size: 16px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.alzheimer-stats-list {
+		padding: 0;
+	}
+
+	ul.semester-terms-list {
+		padding: 0;
+		list-style-type: none;
+	}
+
+	li.term {
+		font-weight: bold;
+		margin: 0 0 1em 0;
+	}
+
 }
 
 /* big landscape tablets, laptops, and desktops */
@@ -685,6 +817,28 @@ tfoot td {
 		font-size: 1em;
 		color: #000;
 	}
+
+	.alzheimer-stats-container {
+		border-color: blue;
+		border-style: solid;
+		border-width: 5px;
+		font-size: 16px;
+		padding-left: 40px;
+		padding-right: 10px;
+	}
+
+	ul.semester-terms-list {
+		padding: 0;
+		list-style-type: disc;
+	}
+
+	li.term {
+		font-weight: bold;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 1em;
+		margin-left: 1em;
+	}
 }
 
 /* hi-res laptops and desktops */
@@ -710,9 +864,48 @@ tfoot td {
 		border: 0;
 		max-width: 60em;
 		margin: auto;
-		
 		font-family: 'Lato', Verdana, Helvetica, sans-serif;
 		font-size: 1em;
 		color: #000;
 	}
+
+	.alzheimer-stats-container {
+		border-color: blue;
+		border-style: solid;
+		border-width: 5px;
+		font-size: 16px;
+		padding-left: 40px;
+		padding-right: 10px;
+	}
+
+	ul.semester-terms-list {
+		padding: 0;
+		list-style-type: disc;
+	}
+
+	/* All descendants of ul.semester-terms-list, * meaning 
+		all elements nested inside of this element.
+	*/
+	/* ul.semester-terms-list * {
+		margin-left: 0;
+	} */
+
+	li.term {
+		font-weight: bold;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 1em;
+		margin-left: 1em;
+	}
 }
+
+
+
+/* REMEMBER */
+/* 
+While writing CSS, be extremely specific with CSS Selector.
+For instance, use `ul.semester-terms-list` and avoid `.semester-terms-list`
+
+The above method would ALWAYS prevent CSS from breaking the site styles.
+It will be easy-to-debug and can prevent inheritance of unnecessary CSS styles of parent element.
+*/
