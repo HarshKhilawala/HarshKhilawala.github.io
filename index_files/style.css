@@ -345,7 +345,8 @@ table {
 	font-family: sans-serif;
 	font-size: 0.8rem;
 	letter-spacing: 1px;
-	width: calc(100% - 1em);
+	/* width: calc(100% - 1em); */
+	width: 100%;
 }
 
 /* Below CSS Selector means - all td tags except (with id term-credits and id term-gpa) */
