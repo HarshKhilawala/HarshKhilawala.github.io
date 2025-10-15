@@ -362,11 +362,12 @@ tfoot {
 	remove class name from the begining to apply to both tables
 	or create separate one for bachelor-terms-list
 */
-.masters-terms-list tbody > tr:nth-of-type(even) {
+.masters-terms-list tbody > tr:nth-of-type(odd) {
   background-color: rgb(237 238 242);
 }
 
-/* .bachelor-terms-list tbody > tr:nth-of-type(even) {
+/* Script would be appropriate */
+/* .bachelor-terms-list tbody tr:nth-of-type(odd) {
   background-color: rgb(237 238 242);
 } */
 
