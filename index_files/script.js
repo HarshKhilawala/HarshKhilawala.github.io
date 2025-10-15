@@ -16,13 +16,15 @@ for(let i=0;i<numOfRows;){
     
     let firstChild = desiredRow.children[0]; // only interested in Course Code 
     let secondChild = desiredRow.children[1]; // and Course Name
-    let thirdChild = desiredRow.children[2];
-    let fourthChild = desiredRow.children[3];
-    let fifthChild = desiredRow.children[4];
+    // let thirdChild = desiredRow.children[2];
+    // let fourthChild = desiredRow.children[3];
+    // let fifthChild = desiredRow.children[4];
     
     // Setting 5 td style to desired color
-    firstChild.style.backgroundColor = "rgb(237 238 242)";
-    secondChild.style.backgroundColor = "rgb(237 238 242)";
+    if(desiredRow.className!=="spanning-row"){
+        firstChild.style.backgroundColor = "rgb(237 238 242)";
+        secondChild.style.backgroundColor = "rgb(237 238 242)";
+    }
     // thirdChild.style.backgroundColor = "rgb(237 238 242)";
     // fourthChild.style.backgroundColor = "rgb(237 238 242)";
     // fifthChild.style.backgroundColor = "rgb(237 238 242)";
@@ -32,6 +34,7 @@ for(let i=0;i<numOfRows;){
     // console.log(firstChild);
     // break;
 
+    
     if(firstChild.rowSpan===2){
         i+=3 // Skip next row (which is already hidden - spanning-row). 
             // Next row in appearance would need to be skipped as well 
@@ -39,6 +42,10 @@ for(let i=0;i<numOfRows;){
     } else if (desiredRow.className==="spanning-row"){ 
         i+=1 // But as this spanning-row is part of tr with row-span=2, 
                 // we can ignore this as well so we can move to next row. 
+
+                // BUG (handled in above if-condition): After i+=1 statement, the execution flow
+                // will continue and eventually it will hit statements which set the backgroundColor
+                // This BUG turns first 2 cells (Type, Credits) of few spanning rows to above color. 
 
     } else {
         i+=2   // In case of row with no rowspan - we can only skip next one 
