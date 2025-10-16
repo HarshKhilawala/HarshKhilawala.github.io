@@ -15,9 +15,8 @@
 - LinkedIn: [/harshkhilawala](https://www.linkedin.com/in/harshkhilawala/)
 - Personal Email: <a href="mailto:harsh.khilawala27careers@gmail.com">harsh.khilawala27careers@gmail.com</a>
 - University Email: <a href="mailto:harshhimanshu.khilawala@pace.edu">harshhimanshu.khilawala@pace.edu</a>
-- Resume: [Click here to view](https://drive.google.com/file/d/12eZa2JcW5iyEztIoBNN-T33HWiandJR_/view?usp=sharing)
-- CV(TBA): [Click here to view]()
-- Official Transcripts: [Masters](https://drive.google.com/file/d/1Tc1BMdt8KAaFylAuPgyyRBWbUEkIpNSt/view?usp=sharing) | [Undergraduate](https://drive.google.com/file/d/1rj7ZmPjwxyOZZBAMnhFYSQHQgxsDQbyq/view?usp=sharing)
+- Resume: <a href="index_files/resume-cv/Harsh_Khilawala_Resume.pdf">PDF</a>
+- CV(TBA): <a href="index_files/resume-cv/Harsh_Khilawala_CV.pdf">PDF</a>
 
 ### “Continuous effort– not strength or intelligence – is the key to unlocking our potential. " - Winston Churchill
 
